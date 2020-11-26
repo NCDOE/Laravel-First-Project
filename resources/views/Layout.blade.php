@@ -49,7 +49,11 @@
 						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 					<div class="copyright">
+<<<<<<< HEAD
 						&copy; Short Left: <a href='/about'>SA Template</a>. Images: <a href='/about'>SA template</a>.
+=======
+						&copy; Short Left: <a href="https://templated.co">SA Template</a>. Images: <a href="https://unsplash.com">SA template</a>.
+>>>>>>> 44a3dd42e1170e914f77d99e8a8b15807725c4b0
 					</div>
 
 				</div>
