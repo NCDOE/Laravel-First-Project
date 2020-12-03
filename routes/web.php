@@ -30,12 +30,13 @@ Route::get('/RequestQoute', function () {
 
 Route::get('/Articles', function () {
  
- $article =App\Article::all();
+ $article =App\Article::take(3)->latest()->get();
 
  
  
     return view('Articles',['articles'=>$article]);
 });
+Route::get('/Articles/{article}', 'ArticlesController@show');
 
 
 Route::get('/YourReview', function () {

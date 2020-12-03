@@ -22,11 +22,11 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href='/welcome'>Welcome</a></li>
-					<li><a href='/about'>About Us</a></li>
-					<li><a href='/Articles'>View Artircles</a></li>
-					<li><a href='/RequestQoute'>Request A Qoute</a></li>
-					<li><a href='/YourReview'>Add your Review</a></li>
+				<li class="{{Request::path()=='/'? 'About Us': ''}}"><a href="/"accesskey="1"title="">About Us</a></li>
+					
+					<li class="{{Request::path()=='/Articles'? 'View Artircles': ''}}"><a href="/Articles"accesskey="2"title="">View Artircles</a></li>
+					<li class="{{Request::path()=='/RequestQoute'? 'Request A Qoute': ''}}"><a href="/RequestQoute"accesskey="3"title="">Request A Qoute</a></li>
+					<li class="{{Request::path()=='/YourReview'? 'Add your Review': ''}}"><a href="/YourReview"accesskey="4"title="">Add your Review</a></li>
 
 					
 				</ul>

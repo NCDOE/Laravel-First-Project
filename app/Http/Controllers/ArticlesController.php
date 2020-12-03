@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
+Use\App\Article;
+use Illuminate\Http\Request;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Article extends Model
+class ArticlesController extends Controller
 {
     public function show($id)
     {
