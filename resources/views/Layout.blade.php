@@ -22,7 +22,7 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-				<li class="{{Request::path()=='/'? 'About Us': ''}}"><a href="/"accesskey="1"title="">About Us</a></li>
+				<li class="{{Request::path()=='/'? 'About Us': ''}}"><a href="/welcome"accesskey="1"title="">About Us</a></li>
 					
 					<li class="{{Request::path()=='/Articles'? 'View Artircles': ''}}"><a href="/Articles"accesskey="2"title="">View Artircles</a></li>
 					<li class="{{Request::path()=='/RequestQoute'? 'Request A Qoute': ''}}"><a href="/RequestQoute"accesskey="3"title="">Request A Qoute</a></li>
