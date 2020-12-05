@@ -15,7 +15,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href='/about'><font color="orange">Road Trip</font> </a></div>
+				<div class="logo"><a href='/'><font color="orange">Road Trip</font> </a></div>
 				<a href="#menu"><span>Menu</span></a>
 			</header>
 
