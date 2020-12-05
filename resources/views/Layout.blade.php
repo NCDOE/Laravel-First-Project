@@ -22,11 +22,11 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-				<li class="{{Request::path()=='/'? 'welcome': ''}}"><a href="/welcome"accesskey="1"title="">About Us</a></li>
-					
-					<li class="{{Request::path()=='/Articles'? 'View Artircles': ''}}"><a href="/Articles"accesskey="2"title="">View Artircles</a></li>
-					<li class="{{Request::path()=='/RequestQoute'? 'Request A Qoute': ''}}"><a href="/RequestQoute"accesskey="3"title="">Request A Qoute</a></li>
-					<li class="{{Request::path()=='/YourReview'? 'Add your Review': ''}}"><a href="/YourReview"accesskey="4"title="">Add your Review</a></li>
+				<li class="{{Request::path()=='/'? 'current_page_item' : ''}}"><a href="/"accesskey="1"title="">Welcome</a></li>
+				   <li class="{{Request::path()=='about'? 'current_page_item' : ''}}"><a href="/about"accesskey="2"title="">About Us</a></li>
+					<li class="{{Request::path()=='Articles'? 'current_page_item': ''}}"><a href="/Articles"accesskey="3"title="">View Artircles</a></li>
+					<li class="{{Request::path()=='RequestQoute'? 'current_page_item': ''}}"><a href="/RequestQoute"accesskey="4"title="">Request A Qoute</a></li>
+					<li class="{{Request::path()=='YourReview'? 'current_page_item': ''}}"><a href="/YourReview"accesskey="5"title="">Add your Review</a></li>
 
 					
 				</ul>
