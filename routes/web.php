@@ -33,10 +33,11 @@ Route::get('/Articles', function () {
  
     return view('Articles',['articles'=>$article]);
 });
-Route::get('/Articles/{article}', 'ArticlesController@show');
 
 
-Route::get('/YourReview', function () {
-    return view('YourReview');
-});
 
+
+
+Route::post('/Articles', 'ArticlesController@store');
+Route::get('/YourReview', 'ArticlesController@edit');
+Route::post('/Articles', 'ArticlesController@update');

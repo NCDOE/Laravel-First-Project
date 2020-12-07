@@ -4,24 +4,35 @@
 			<footer id="footer">
 				
 
-					<h2>Request Qoutation</h2>
+					<h1>Request Qoutation</h1>
 
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
+					<form method="POST" action="/Articles">
+                      @csrf
 						<div class="field">
-							<label for="message">State Request</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						<label class="label" for="title"><strong>Title</strong></label>
+							<div class="control">
+							<input class="intup" type="text" name="title" id="title">
 						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type=""></li>
+						</div>
+
+						<div class="field" >
+						<label class="label" for="excerpt">Excerpt</label>
+						<div class="control">
+						
+						<textarea class="textarea" name="excerpt" id="excerpt"></textarea>
+					</div>
+					</div>
+					<div class="field">
+							<label class="label" for="body">Body</label>
+							<div class="control">
+							<textarea class="textarea" name="body" id="body"></textarea>
+							</div>
+				     	</div>
+                      <div class="field is-grouped">
+					  <div class="control">
+					  <button class="button is-link" type="submit">Submit</button>
+					  </div>
+				    </div>
 						</ul>
 					</form>
 
